@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.realfinalproject.CreatePostController">
+    <children>
+        <ImageView fx:id="bg" fitHeight="407.0" fitWidth="606.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="enterText" layoutX="59.0" layoutY="41.0" prefHeight="21.0" prefWidth="149.0" text="Enter text if you want:" textFill="#ff9019">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="postText" layoutX="33.0" layoutY="72.0" prefHeight="200.0" prefWidth="200.0" />
+        <Label fx:id="enterPhoto" layoutX="349.0" layoutY="41.0" text="Enter picture name if you want:" textFill="#ff9019">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="postImage" layoutX="378.0" layoutY="89.0" />
+        <ImageView fx:id="imagePost" fitHeight="148.0" fitWidth="107.0" layoutX="399.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="confirmPhoto" layoutX="406.0" layoutY="303.0" mnemonicParsing="false" onAction="#setPostImage" text="confirm image" />
+        <Button fx:id="create" layoutX="268.0" layoutY="328.0" mnemonicParsing="false" onAction="#setCreatePost" text="create">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="back" layoutX="20.0" layoutY="353.0" mnemonicParsing="false" onAction="#switchToMainPage" text="back" />
+    </children>
+</AnchorPane>

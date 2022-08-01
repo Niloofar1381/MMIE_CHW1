@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.realfinalproject.SelectIdPageController">
+   <children>
+      <ImageView fx:id="bg" fitHeight="406.0" fitWidth="608.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="confirm" layoutX="318.0" layoutY="89.0" mnemonicParsing="false" onAction="#setConfirm" text="confirm" />
+      <TextField fx:id="fillId" layoutX="272.0" layoutY="41.0" />
+      <Label fx:id="label" layoutX="50.0" layoutY="44.0" text="type the id of the message:" textFill="#ff9019">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profileImage" fitHeight="56.0" fitWidth="62.0" layoutX="29.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="messageText" fill="#ff9019" layoutX="157.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="405.0" />
+      <Label fx:id="id" layoutX="20.0" layoutY="264.0" prefHeight="17.0" prefWidth="81.0" textFill="#ff9019" />
+      <Button fx:id="back" layoutX="530.0" layoutY="349.0" mnemonicParsing="false" onAction="#switchToSearchTextPage" text="back" />
+   </children>
+</AnchorPane>

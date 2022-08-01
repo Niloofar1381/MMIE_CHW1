@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.realfinalproject.ShowProfileController">
+   <children>
+      <ImageView fx:id="bg" fitHeight="400.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="label" layoutX="14.0" layoutY="28.0" prefHeight="27.0" prefWidth="279.0" text="Which profile do you want to see?" textFill="#ff9019">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="profile" layoutX="323.0" layoutY="29.0" />
+      <Button fx:id="confirm" layoutX="342.0" layoutY="75.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="25.0" prefWidth="112.0" text="confirm" />
+      <ImageView fx:id="postImage1" fitHeight="175.0" fitWidth="123.0" layoutX="65.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="postImage2" fitHeight="175.0" fitWidth="123.0" layoutX="358.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="goBackToMainPage" layoutX="454.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToMainPage" text="go back to main page" />
+      <Button fx:id="follow" layoutX="231.0" layoutY="357.0" mnemonicParsing="false" onAction="#setFollow" text="follow" />
+      <Label fx:id="followerNumber" layoutX="197.0" layoutY="223.0" prefHeight="21.0" prefWidth="149.0" textFill="#ff9019">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="followingNumber" layoutX="194.0" layoutY="263.0" prefHeight="21.0" prefWidth="155.0" textFill="#ff9019">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userNotFound" layoutX="32.0" layoutY="79.0" prefHeight="21.0" prefWidth="269.0" textFill="#ff9019">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="followStatus" layoutX="6.0" layoutY="361.0" prefHeight="17.0" prefWidth="210.0" textFill="#ff9019" />
+      <ImageView fx:id="profileImage" fitHeight="61.0" fitWidth="68.0" layoutX="245.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="id" layoutX="245.0" layoutY="182.0" prefHeight="17.0" prefWidth="60.0" textFill="#ff9019" />
+      <Text fx:id="postText1" fill="#ff9019" layoutX="71.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.0" />
+      <Text fx:id="postText2" fill="#ff9019" layoutX="364.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.0" />
+      <Button fx:id="like1" layoutX="111.0" layoutY="336.0" mnemonicParsing="false" onAction="#setLike1" prefHeight="25.0" prefWidth="31.0" />
+      <Button fx:id="like2" layoutX="405.0" layoutY="336.0" mnemonicParsing="false" onAction="#setLike2" prefHeight="25.0" prefWidth="31.0" />
+      <Label fx:id="label1" layoutX="65.0" layoutY="370.0" prefHeight="17.0" prefWidth="123.0" textFill="#ff9019" />
+      <Label fx:id="label2" layoutX="359.0" layoutY="370.0" prefHeight="17.0" prefWidth="123.0" textFill="#ff9019" />
+   </children>
+</AnchorPane>
